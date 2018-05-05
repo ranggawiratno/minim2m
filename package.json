@@ -1,0 +1,25 @@
+{
+  "name": "minim2m",
+  "version": "0.0.1",
+  "description": "A mini M2M Receiver for demo purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranggawiratno/minim2m.git"
+  },
+  "author": "Rangga Wiratno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranggawiratno/minim2m/issues"
+  },
+  "homepage": "https://github.com/ranggawiratno/minim2m#readme",
+  "dependencies": {
+    "mysql": "*",
+    "express": "*",
+    "body-parser": "*",
+    "properties-reader":"*"
+  }
+}
