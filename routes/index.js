@@ -2,11 +2,11 @@ var express = require('express');
 var router = express.Router();
 var myindexpath = "/";
 
-module.exports = function(indexpath){
+module.exports = function(_indexpath, _logger){
     var router = express.Router();
-    myindexpath += indexpath;
-    console.log("before" + router);
-    console.log("index.js: " + myindexpath);
+    var logger = _logger;
+
+    myindexpath += _indexpath;
     router.get(myindexpath, function(req, res){
         var username = req.query.username;
         var password = req.query.password;
@@ -26,7 +26,6 @@ module.exports = function(indexpath){
     
         res.send(processRequest(username, password, sender, msisdn, message));
     });
-    console.log("after" + router);
     return router;
 };
 
