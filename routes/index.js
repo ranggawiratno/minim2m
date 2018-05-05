@@ -8,6 +8,8 @@ module.exports = function(_indexpath, _logger){
 
     myindexpath += _indexpath;
     router.get(myindexpath, function(req, res){
+        logger.writeinfo(req.query);
+        
         var username = req.query.username;
         var password = req.query.password;
         var sender = req.query.sender;
@@ -18,6 +20,8 @@ module.exports = function(_indexpath, _logger){
     });
     
     router.post(myindexpath, function(req, res){
+        logger.writeinfo(req.body);
+        
         var username = req.body.username;
         var password = req.body.password;
         var sender = req.body.sender;

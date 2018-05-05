@@ -21,6 +21,8 @@
     "express": "*",
     "body-parser": "*",
     "properties-reader":"*",
-    "winston":"*"
+    "winston":"*",
+    "moment":"*",
+    "mkdirp":"*"
   }
 }
